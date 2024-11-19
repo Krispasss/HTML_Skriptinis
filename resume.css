@@ -1,0 +1,42 @@
+:root {
+    --background-color: #ffffff; /* Šviesus fonas */
+    --text-color: #000000;      /* Šviesus tekstas */
+    --button-color: #4CAF50;    /* Mygtuko spalva */
+}
+
+.dark-theme {
+    --background-color: #121212; /* Tamsus fonas */
+    --text-color: #ffffff;       /* Tamsus tekstas */
+    --button-color: #bb86fc;     /* Tamsus mygtuko spalva */
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-button {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+body {
+    position: relative; /* Užtikrina, kad mygtukas laikysis pagal puslapį */
+    min-height: 100vh;
+}
+
+.theme-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,18 @@
+h1 {
+    font-family: 'Aharoni', sans-serif; /* Šriftas */
+    font-size: 24px; /* Dydis */
+    font-weight: 700; /* Storis */
+  }
+
+h2 {
+    font-family: 'Broadway', sans-serif; /* Šriftas */
+    font-size: 24px; /* Dydis */
+    font-weight: 700; /* Storis */
+  }
+  
+  p {
+    font-family: 'Bauhaus 93', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
