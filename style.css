@@ -1,0 +1,210 @@
+/* Bendrieji stiliai */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Užtikriname, kad kūnas ir HTML užimtų visą aukštį */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Išdėstome elementus stulpeliu */
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s; /* Sklandus temos keitimas */
+}
+
+/* Turinys (Main) */
+/* Centruoti main turinį */
+main {
+    display: flex;
+    justify-content: center; /* Horizontaliai išlygina */
+    align-items: center; /* Vertikaliai išlygina */
+    min-height: 100vh; /* Užtikrina, kad turinys užimtų visą ekrano aukštį */
+    text-align: center; /* Užtikrina, kad tekstas būtų sulygiuotas į centrą */
+}
+
+
+/* Dėl Flexbox naudojimo, kad viskas būtų gerai su išdėstymu */
+.container {
+    width: 100%; /* Užtikrina, kad konteineris užimtų visą plotį */
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Horizontaliai išlygina vidinį turinį */
+    align-items: center; /* Vertikaliai išlygina */
+}
+
+.col-lg-6 {
+    text-align: center; /* Text alignment for inner content */
+}
+
+.text-center {
+    text-align: center; /* Užtikrina, kad tekstas bus centre */
+}
+
+
+
+/* Antraštė (Header) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333; /* Tamsiai pilka spalva */
+    color: #f9f9f9; /* Baltas tekstas */
+}
+
+/* Navigacija */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 15px;
+    font-size: 16px;
+    padding: 10px;
+    transition: transform 0.3s, color 0.3s; /* Animacija mygtukams */
+}
+
+.nav-bar a:hover {
+    color: #f0a500; /* Geltona spalva užvedus pelę */
+    transform: translateY(-5px); /* Animacija: pakyla mygtukas */
+}
+
+/* Sticky Footer */
+footer {
+    background-color: #222; /* Tamsiai pilka spalva */
+    color: #f9f9f9; /* Baltas tekstas */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Užtikrina, kad footer būtų apačioje */
+    width: 100%;
+}
+
+footer .social-icons a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px;
+    margin: 0 15px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+footer .social-icons a:hover {
+    transform: scale(1.2); /* Ikona padidėja užvedus pelę */
+    color: #f0a500; /* Geltona spalva hover efektui */
+}
+
+footer .contact-info {
+    margin-top: 10px;
+}
+
+/* Mygtuko animacija */
+#theme-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.2);
+    color: #f0a500;
+}
+
+/* Šviesi tema */
+body.light-theme {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navigacija ir Header šviesioje temoje */
+body.light-theme header {
+    color: #fff; /* Baltas tekstas header */
+}
+
+body.light-theme .nav-bar a {
+    color: #fff; /* Baltas tekstas nuorodoms navigacijoje */
+}
+
+body.light-theme .nav-bar a:hover {
+    color: #f0a500; /* Geltonas hover efektas */
+}
+
+body.light-theme .footer .social-icons a {
+    color: #333; /* Tamsios spalvos ikonoms footer */
+}
+
+
+/* Tamsi tema */
+body.dark-theme {
+    background-color: #121212;
+    color: #f9f9f9;
+}
+
+body.dark-theme .nav-bar a {
+    color: #f9f9f9;
+}
+
+body.dark-theme .nav-bar a:hover {
+    color: #f0a500;
+}
+
+body.dark-theme .footer .social-icons a {
+    color: #f9f9f9;
+}
+
+/* Papildoma animacija mygtukui */
+.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+
+
+.clock {
+    font-size: 3rem;
+    padding: 20px;
+    border: 2px solid #712424;
+    background-color: #863478;
+    border-radius: 10px;
+}
+
+#time {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Spalvos požymių vidurkiui */
+.low-average {
+    color: red;
+}
+
+.medium-average {
+    color: orange;
+}
+
+.high-average {
+    color: green;
+}
+

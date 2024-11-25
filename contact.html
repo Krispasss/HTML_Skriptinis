@@ -1,53 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontaktai</title>
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="main.css">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktai</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="termometras.css">
 </head>
-<body class="contact-page">
+<body>
+    <!-- Antraštė -->
+    <header>
+        <div class="logo">
+            <img src="\assets\nuotraukos\klogo.png" alt="Puslapio Logotipas" width="100">
+        </div>
+        <nav class="nav-bar">
+            <a href="index.html">Pagrindinis</a>
+            <a href="about.html">Apie</a>
+            <a href="resume.html">Reziumė</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="services.html">Paslaugos</a>
+            <a href="contact.html">Kontaktai</a>
+            <button id="theme-toggle" aria-label="Keisti temą">
+                <i class="fas fa-sun"></i>
+            </button>
+        </nav>
+    </header>
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <i class="bi bi-camera"></i>
-        <h1 class="sitename">Krispo :)</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Home<br></a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
-
+    <!-- Turinys -->
+    <main>
+      
+      <div class="thermometer">
+        <div class="close-button">×</div>
+        <div class="temperature">20°C</div>
+        <div class="pressure">Slėgis: -- hPa</div>
+        <div class="humidity">Drėgmė: --%</div>
     </div>
-  </header>
+    
+  <script src="termometras.js"></script>
 
-<main class="main">
+  <div class="text-box">
+    <h1>Išmanaus termometro vartojo sąsaja:</h1>
+    <textarea readonly>
+      Norėdami naudotis termometru, užveskite pelę ant dešinio ekrano krašto.
+      Atsidarys langas, kuriame bus rodomi temperatūra, slėgis ir drėgmė pagal jūsų vietovę.
+      Norėdami uždaryti langą, spustelėkite „X“ mygtuką viršutiniame dešiniajame kampe. 
+      Langas vėl bus pasiekiamas tik po 3 sekundžių pertraukos.
+    </textarea>
+</div>
 
 
 
 
+    </main>
+
+    <!-- Poraštė -->
+    <footer>
+      <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank" class="fa-icon">
+              <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="fa-icon">
+              <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" class="fa-icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <div class="contact-info">
+          <p>Kontaktinė informacija</p>
+          <p>Kontaktai: krispas@uit.lt | +370 689 23377</p>
+          <p>© 2024 Puslapio kūrėjas: Krispas</p> 
+      </div>
+  </footer>
+
+  <script src="contact.js"></script>
 </body>
 </html>

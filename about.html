@@ -1,20 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apie</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <ul>
-    <li><a href="index.html" class="active">Home<br></a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="resume.html">Resume</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <h1>Informacija apie mane</h1>
-  
+    <!-- Antraštė -->
+    <header>
+        <div class="logo">
+            <img src="\assets\nuotraukos\klogo.png" alt="Puslapio Logotipas" width="100">
+        </div>
+        <nav class="nav-bar">
+            <a href="index.html">Pagrindinis</a>
+            <a href="about.html">Apie</a>
+            <a href="resume.html">Reziumė</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="services.html">Paslaugos</a>
+            <a href="contact.html">Kontaktai</a>
+            <button id="theme-toggle" aria-label="Keisti temą">
+                <i class="fas fa-sun"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Turinys -->
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <h2>Apie</h2>
+                    <h3>(-‿◦☀)</h3>
+                    <p>Looking for a job :P</p>
+
+
+
+                    <h1>Kontaktų forma</h1>
+
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="firstName">Vardas</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Pavardė</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">El. pašto adresas</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefono numeris</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Adresas</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                
+                        <!-- Papildomi požymiai -->
+                        <div class="form-group">
+                            <label for="attribute1">Požymis 1</label>
+                            <input type="number" id="attribute1" name="attribute1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="attribute2">Požymis 2</label>
+                            <input type="number" id="attribute2" name="attribute2" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="attribute3">Požymis 3</label>
+                            <input type="number" id="attribute3" name="attribute3" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="attribute4">Požymis 4</label>
+                            <input type="number" id="attribute4" name="attribute4" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="attribute5">Požymis 5</label>
+                            <input type="number" id="attribute5" name="attribute5" required>
+                        </div>
+                
+                        <button type="button" class="button" onclick="submitForm()">Siųsti</button>
+                    </form>
+                
+                    <!-- Klaidų pranešimų vieta -->
+                    <div id="errorMessages" style="color: red; margin-top: 20px;"></div>
+                
+                    <div class="output" id="output"></div>
+                
+                    <script src="forma.js"></script> <!-- Nuoroda į JavaScript failą -->
+
+
+                </div>
+            </div>
+        </div>
+    </main>      
+
+    <!-- Poraštė -->
+    <footer>
+      <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank" class="fa-icon">
+              <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="fa-icon">
+              <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com" target="_blank" class="fa-icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <div class="contact-info">
+          <p>Kontaktinė informacija</p>
+          <p>Kontaktai: krispas@uit.lt | +370 689 23377</p>
+          <p>© 2024 Puslapio kūrėjas: Krispas</p> 
+      </div>
+  </footer>
+
+  <script src="contact.js"></script>
 </body>
 </html>

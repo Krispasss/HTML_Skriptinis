@@ -1,0 +1,55 @@
+/* Pagrindinis stilius */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Kiekvienai formai skirtas div */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Etikečių stilius */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Įvesties laukų stilius */
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Mygtuko stilius */
+.button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Mygtuko užvedimo efektas */
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Rezultatų sekcijos stilius */
+.output {
+    margin-top: 20px;
+}
+
+/* Išvesties stilius */
+.output p {
+    margin: 5px 0;
+}
+
+/* Stilius klaidų pranešimams */
+#errorMessages {
+    color: red;
+}
+
+
